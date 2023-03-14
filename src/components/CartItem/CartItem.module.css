@@ -1,0 +1,65 @@
+.cartItem {
+    display: grid;
+    grid-template-areas:
+        "image title remove amount add price delete"
+        "image type remove amount add price delete";
+    grid-template-columns: repeat(7, auto);
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    border-bottom: 1px solid var(--gray);
+    padding: 5px 0;
+}
+
+@media (max-width: 768px) {
+    .cartItem {
+        grid-template-areas:
+            "image title type delete"
+            "image title type delete"
+            "remove amount add price";
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.picture {
+    grid-area: image;
+    height: 60px;
+    width: 60px;
+}
+
+.title {
+    grid-area: title;
+    font-size: 16px;
+}
+
+.add {
+    grid-area: add;
+    justify-self: center;
+}
+
+.amount {
+    grid-area: amount;
+    font-size: 16px;
+    text-align: center;
+}
+
+.remove {
+    grid-area: remove;
+    justify-self: center;
+}
+.type {
+    grid-area: type;
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--gray);
+    margin: 0;
+}
+.price {
+    grid-area: price;
+    font-size: 16px;
+}
+
+.delete {
+    grid-area: delete;
+    justify-self: start;
+}

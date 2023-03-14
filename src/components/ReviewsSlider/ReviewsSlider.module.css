@@ -1,0 +1,59 @@
+.sliderWrapper {
+    width: 380px;
+    overflow: hidden;
+}
+
+@media (max-width: 768px) {
+    .sliderWrapper {
+        width: 290px;
+    }
+}
+
+.slider {
+    display: grid;
+    grid-auto-flow: column;
+    width: 100%;
+    transition: var(--duration);
+}
+
+.slide {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-areas:
+        "avatar name auto"
+        "avatar position auto"
+        "description description description";
+    width: 380px;
+    align-items: center;
+    gap: 0 10px;
+    padding: 0 2px;
+}
+
+@media (max-width: 768px) {
+    .slide {
+        width: 290px;
+    }
+}
+
+.slideAvatar {
+    grid-area: avatar;
+    border-radius: 50%;
+}
+.slideName {
+    grid-area: name;
+    font-size: 18px;
+}
+.slidePosition {
+    grid-area: position;
+    margin: 0;
+    font-size: 14px;
+}
+.slideDescription {
+    grid-area: description;
+}
+
+.buttons {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}

@@ -1,0 +1,49 @@
+.reviews {
+    background: var(--black);
+    padding: 70px 0;
+    position: relative;
+    z-index: 0;
+}
+
+.reviews::before {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 172px;
+    height: 900px;
+    background: rgba(255, 255, 255, 0.04);
+    top: 0;
+    left: 280px;
+    transform: rotate(-30deg) translateY(-20%);
+}
+
+@media (max-width: 768px) {
+    .reviews::before {
+        height: 700px;
+        left: 0;
+    }
+}
+
+.inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 1067px) {
+    .inner {
+        justify-content: center;
+    }
+}
+
+.picture {
+    border-radius: 10px;
+    width: 482px;
+    height: 462px;
+}
+
+@media (max-width: 1067px) {
+    .picture {
+        display: none;
+    }
+}

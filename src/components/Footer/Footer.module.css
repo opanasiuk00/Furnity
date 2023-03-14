@@ -1,0 +1,49 @@
+.footer {
+    background: var(--black);
+    color: var(--white);
+}
+
+.inner {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+@media (max-width: 768px) {
+    .inner {
+        gap: 20px;
+    }
+}
+
+.logo {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    gap: 7px;
+}
+
+.logo h4 {
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 26px;
+}
+
+.menu ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 45px;
+}
+
+.menu a {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+}
+
+.copyright {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 38px;
+}

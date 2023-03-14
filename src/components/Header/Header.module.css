@@ -1,0 +1,31 @@
+.header {
+    background: url("./top-background.jpg") top center no-repeat;
+    background-size: cover;
+    position: relative;
+    padding-bottom: 100px;
+}
+
+.headerTop {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headerLogo {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 7px;
+    align-items: center;
+}
+
+.title {
+    margin: 130px auto 30px;
+    max-width: 660px;
+    text-align: center;
+}
+
+.title p {
+    width: 60%;
+    margin: 10px auto 20px;
+}

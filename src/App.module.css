@@ -1,0 +1,128 @@
+.wrapper {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+}
+
+.header {
+    grid-area: header;
+}
+
+.main {
+    grid-area: main;
+}
+
+/*------------- about --------------*/
+
+.about {
+    padding-top: 50px;
+}
+
+.inner {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 967px) {
+    .inner {
+        justify-content: center;
+    }
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: 1fr auto;
+    gap: 30px 75px;
+}
+
+@media (max-width: 667px) {
+    .content {
+        grid-template-columns: repeat(1, auto);
+    }
+}
+
+.aboutItem {
+    width: 235px;
+}
+
+.aboutItem svg {
+    margin-bottom: 15px;
+}
+
+.aboutItem p {
+    margin-top: 10px;
+}
+
+@media (max-width: 967px) {
+    .picture {
+        display: none;
+    }
+}
+
+.picture img {
+    border-radius: 15px;
+}
+
+/* ---------- about end ------------ */
+
+/* ------ shop title ----- */
+.shop {
+    padding: 100px 0 50px;
+}
+
+.shopTitle {
+    max-width: 720px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.shopDescription {
+    max-width: 540px;
+    text-align: center;
+    margin: 10px auto 0;
+}
+
+/* ------ shop title end ----- */
+
+/* ------ contact ----- */
+.contact {
+    padding: 100px 0;
+}
+
+.contactInner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 967px) {
+    .contactInner {
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+
+.contactInner h2 {
+    max-width: 740px;
+    min-width: 300px;
+}
+
+@media (max-width: 967px) {
+    .contactInner h2 {
+        text-align: center;
+    }
+}
+
+/* ------ contact end ----- */
+
+.footer {
+    grid-area: footer;
+}

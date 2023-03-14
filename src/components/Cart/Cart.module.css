@@ -1,0 +1,19 @@
+.modalTotal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0 40px;
+}
+
+.modalBuy {
+    width: 100%;
+}
+
+.cartClear {
+    display: block;
+    margin: 0 auto;
+}
+
+.cartClearTitle {
+    text-align: center;
+}
