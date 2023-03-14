@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/furnity/static/css/main.82468738.css",
-    "main.js": "/furnity/static/js/main.4ead94ef.js",
-    "static/js/787.78a58457.chunk.js": "/furnity/static/js/787.78a58457.chunk.js",
-    "static/media/top-background.jpg": "/furnity/static/media/top-background.10afb4a04caba5e8c878.jpg",
-    "static/media/chair.jpg": "/furnity/static/media/chair.d0a525bd8efce22ff108.jpg",
-    "static/media/sofa.jpg": "/furnity/static/media/sofa.7f392d01c1075b219bcf.jpg",
-    "static/media/chair075x.jpg": "/furnity/static/media/chair075x.a8eb54e87f714a38b728.jpg",
-    "static/media/no-product.png": "/furnity/static/media/no-product.579409ff1e56fac606cc.png",
-    "static/media/modal-cart-dummy.svg": "/furnity/static/media/modal-cart-dummy.839afd8054e11f36b945252a27de6185.svg",
-    "static/media/photo-cover.svg": "/furnity/static/media/photo-cover.fb98cf13a87225efe558669bdc541ac7.svg",
-    "index.html": "/furnity/index.html",
-    "main.82468738.css.map": "/furnity/static/css/main.82468738.css.map",
-    "main.4ead94ef.js.map": "/furnity/static/js/main.4ead94ef.js.map",
-    "787.78a58457.chunk.js.map": "/furnity/static/js/787.78a58457.chunk.js.map"
+    "main.css": "/Furnity/static/css/main.5a757f98.css",
+    "main.js": "/Furnity/static/js/main.8020ba8c.js",
+    "static/js/787.78a58457.chunk.js": "/Furnity/static/js/787.78a58457.chunk.js",
+    "static/media/top-background.jpg": "/Furnity/static/media/top-background.10afb4a04caba5e8c878.jpg",
+    "static/media/chair.jpg": "/Furnity/static/media/chair.d0a525bd8efce22ff108.jpg",
+    "static/media/sofa.jpg": "/Furnity/static/media/sofa.7f392d01c1075b219bcf.jpg",
+    "static/media/chair075x.jpg": "/Furnity/static/media/chair075x.a8eb54e87f714a38b728.jpg",
+    "static/media/no-product.png": "/Furnity/static/media/no-product.579409ff1e56fac606cc.png",
+    "static/media/modal-cart-dummy.svg": "/Furnity/static/media/modal-cart-dummy.839afd8054e11f36b945252a27de6185.svg",
+    "static/media/photo-cover.svg": "/Furnity/static/media/photo-cover.fb98cf13a87225efe558669bdc541ac7.svg",
+    "index.html": "/Furnity/index.html",
+    "main.5a757f98.css.map": "/Furnity/static/css/main.5a757f98.css.map",
+    "main.8020ba8c.js.map": "/Furnity/static/js/main.8020ba8c.js.map",
+    "787.78a58457.chunk.js.map": "/Furnity/static/js/787.78a58457.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.82468738.css",
-    "static/js/main.4ead94ef.js"
+    "static/css/main.5a757f98.css",
+    "static/js/main.8020ba8c.js"
   ]
 }
