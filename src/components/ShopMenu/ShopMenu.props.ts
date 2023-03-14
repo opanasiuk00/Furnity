@@ -1,4 +1,3 @@
-import { handleScroll } from "./../../utils/ScrollToElement";
 import { DetailedHTMLProps, HTMLAttributes } from "react";
 
 export interface ShopMenuProps

@@ -47,10 +47,10 @@ export const Shop = (): JSX.Element => {
 				}
 			</div>
 
-			({
+			{
 				products?.length === 0 &&
 				<img className={styles.notFound} src={noProduct} alt='not found' />
-			})
+			}
 		</>
 	)
 };
