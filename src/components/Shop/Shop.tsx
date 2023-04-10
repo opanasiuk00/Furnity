@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import styles from './Shop.module.css';
-import { ShopItem } from '../ShopItem/ShopItem';
+import { ShopItem } from './ShopItem/ShopItem';
 import ContentLoader from 'react-content-loader';
 import { productsReducer, useAppDispatch } from '../../redux/store';
 import { useSelector } from 'react-redux';
@@ -11,7 +11,7 @@ import noProduct from './no-product.png';
 
 export const Shop = (): JSX.Element => {
 
-	const { status, products, typeActive } = useSelector(productsReducer);
+	const { products, typeActive } = useSelector(productsReducer);
 	const dispatch = useAppDispatch();
 
 	const handleAddToCart = (item: CartItemType) => {
@@ -27,9 +27,9 @@ export const Shop = (): JSX.Element => {
 		<>
 			<div className={styles.shopProducts}>
 				{
-					(status === 'success' && (products?.length !== 0) && (products?.map(item => <ShopItem key={item.id} handleAddToCart={handleAddToCart} {...item} />)))
+					(products !== null && (products?.length !== 0) && (products?.map(item => <ShopItem key={item.id} handleAddToCart={handleAddToCart} {...item} />)))
 					||
-					((status === 'loading' || status === 'error') && new Array(8).fill(1).map((elem, i) => <ContentLoader
+					((products === null) && new Array(8).fill(1).map((elem, i) => <ContentLoader
 						key={i}
 						speed={2}
 						width={240}

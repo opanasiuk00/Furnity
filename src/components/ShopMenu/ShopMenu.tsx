@@ -2,7 +2,7 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 import { changeMenu } from '../../redux/product/slice';
 import { productsReducer, useAppDispatch } from '../../redux/store';
-import { Button } from '../Button/Button';
+import { Button } from '../Buttons/Button/Button';
 import styles from './ShopMenu.module.css';
 import { ShopMenuProps } from './ShopMenu.props';
 
@@ -36,7 +36,7 @@ export const ShopMenu = ({ handleScroll, className = '' }: ShopMenuProps): JSX.E
 			<ul className={styles.list}>
 				{
 					menu.map(elem => <li key={elem.id}> <Button
-						color='ghost'
+						variant='ghost'
 						size='s'
 						onClick={() => handleMenu(elem.name.replace(/ /ig, '-'))}
 						active={typeActive === elem.name.replace(/ /ig, '-')}

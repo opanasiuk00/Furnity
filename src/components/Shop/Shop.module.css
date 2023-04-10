@@ -8,6 +8,13 @@
 .notFound {
     display: block;
     margin: 0 auto;
-    max-width: 450px;
-    min-width: 280px;
+    width: 450px;
+    height: 360px;
+}
+
+@media (max-width: 768px) {
+    .notFound {
+        width: 280px;
+        height: 224px;
+    }
 }
