@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Furnity/static/css/main.5a757f98.css",
-    "main.js": "/Furnity/static/js/main.967753e5.js",
+    "main.css": "/Furnity/static/css/main.069984bb.css",
+    "main.js": "/Furnity/static/js/main.815902ce.js",
     "static/js/787.78a58457.chunk.js": "/Furnity/static/js/787.78a58457.chunk.js",
     "static/media/top-background.jpg": "/Furnity/static/media/top-background.10afb4a04caba5e8c878.jpg",
     "static/media/chair.jpg": "/Furnity/static/media/chair.d0a525bd8efce22ff108.jpg",
@@ -11,12 +11,12 @@
     "static/media/modal-cart-dummy.svg": "/Furnity/static/media/modal-cart-dummy.839afd8054e11f36b945252a27de6185.svg",
     "static/media/photo-cover.svg": "/Furnity/static/media/photo-cover.fb98cf13a87225efe558669bdc541ac7.svg",
     "index.html": "/Furnity/index.html",
-    "main.5a757f98.css.map": "/Furnity/static/css/main.5a757f98.css.map",
-    "main.967753e5.js.map": "/Furnity/static/js/main.967753e5.js.map",
+    "main.069984bb.css.map": "/Furnity/static/css/main.069984bb.css.map",
+    "main.815902ce.js.map": "/Furnity/static/js/main.815902ce.js.map",
     "787.78a58457.chunk.js.map": "/Furnity/static/js/787.78a58457.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5a757f98.css",
-    "static/js/main.967753e5.js"
+    "static/css/main.069984bb.css",
+    "static/js/main.815902ce.js"
   ]
 }
