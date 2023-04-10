@@ -1,0 +1,79 @@
+.button {
+    border: none;
+    cursor: pointer;
+    transition: var(--duration);
+    padding: 10px 30px;
+    white-space: nowrap;
+}
+
+.s {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    border-radius: 50px;
+}
+
+.m {
+    font-family: "Nunito Sans";
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 29px;
+    border-radius: 5px;
+}
+
+.l {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 35px;
+    border-radius: 10px;
+}
+
+.orange {
+    background: var(--orange);
+    color: var(--white);
+}
+
+.orange:hover,
+.orangeActive {
+    background: var(--orange-hover);
+}
+
+.pink {
+    background: var(--pink);
+    color: var(--white);
+}
+
+.pink:hover,
+.pinkActive {
+    background: var(--pink-hover);
+}
+
+.ghost {
+    font-weight: 400;
+    background: transparent;
+    color: var(--black);
+}
+
+.ghost:hover,
+.ghostActive {
+    background: var(--black);
+    color: var(--white);
+}
+
+.button:enabled:active {
+    box-shadow: 0 0 0 1px var(--button-focus);
+    animation: anim-shadow 0.3s forwards;
+}
+
+@keyframes anim-shadow {
+    100% {
+        box-shadow: 0 0 50px 20px var(--button-click);
+    }
+}
+
+.button:disabled,
+.button[disabled] {
+    color: var(--white-light);
+    background: var(--disabled);
+    cursor: auto;
+}

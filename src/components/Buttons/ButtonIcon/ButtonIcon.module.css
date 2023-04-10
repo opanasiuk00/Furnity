@@ -2,65 +2,40 @@
     border: none;
     cursor: pointer;
     transition: var(--duration);
-    padding: 10px 30px;
+    padding: 10px;
     white-space: nowrap;
+    border-radius: 50%;
+    position: relative;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .button svg {
     transition: var(--duration);
 }
 
-.button span {
+.title {
     display: none;
-}
-
-.s {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 26px;
-    border-radius: 50px;
-}
-
-.m {
-    font-family: "Nunito Sans";
-    font-weight: 700;
-    font-size: 21px;
-    line-height: 29px;
-    border-radius: 5px;
-}
-
-.l {
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 35px;
-    border-radius: 10px;
-}
-
-.svg {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    padding: 10px;
 }
 
 .orange {
     background: var(--orange);
-    color: var(--white);
 }
 
 .orange svg {
     fill: var(--white);
 }
 
-.orange:hover,
-.orangeActive {
+.orange:hover {
     background: var(--orange-hover);
 }
 
 .pink {
     background: var(--pink);
-    color: var(--white);
 }
 .pink svg {
     fill: var(--white);
@@ -72,19 +47,15 @@
 }
 
 .ghost {
-    font-weight: 400;
     background: transparent;
-    color: var(--black);
 }
 
 .ghost svg {
     fill: var(--black);
 }
 
-.ghost:hover,
-.ghostActive {
+.ghost:hover {
     background: var(--black);
-    color: var(--white);
 }
 
 .ghost:hover svg,
@@ -105,7 +76,10 @@
 
 .button:disabled,
 .button[disabled] {
-    color: var(--white-light);
     background: var(--disabled);
     cursor: auto;
+}
+.button:disabled svg,
+.button[disabled] svg {
+    fill: var(--white);
 }

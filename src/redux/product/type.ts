@@ -5,9 +5,15 @@ export type product = {
     price: string;
     type: string;
 };
+
+export enum Status {
+    Loading = "loading",
+    Success = "success",
+    Error = "error",
+}
 export interface ProductsSliceState {
     products: product[] | null;
-    status: "loading" | "success" | "error";
+    status: Status;
     typeActive: typeActive;
 }
 
